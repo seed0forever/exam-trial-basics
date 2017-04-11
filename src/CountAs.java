@@ -1,4 +1,5 @@
 public class CountAs {
+
   public static void main(String[] args) {
     // Create a function that takes a filename as string parameter,
     // counts the occurances of the letter "a", and returns it as a number.

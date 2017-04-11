@@ -2,9 +2,10 @@ package pirates;
 
 import java.util.*;
 
-public class PirateCounter{
+public class PirateCounter {
 
   class Pirate {
+
     String name;
     boolean hasWoodenLeg;
     int gold;
@@ -16,7 +17,7 @@ public class PirateCounter{
     }
   }
 
-  public static void main(String... args){
+  public static void main(String... args) {
     ArrayList<Pirate> pirates = new ArrayList<>();
 
     // Given this list...

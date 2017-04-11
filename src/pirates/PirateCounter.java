@@ -38,6 +38,12 @@ public class PirateCounter {
   }
 
   private static List<String> filterPirates(List<Pirate> pirates) {
-    return new ArrayList<>();
+    List<String> filteredList = new ArrayList<>();
+    for (Pirate pirate : pirates) {
+      if (pirate.hasWoodenLeg && pirate.gold > 15) {
+        filteredList.add(pirate.name);
+      }
+    }
+    return filteredList;
   }
 }

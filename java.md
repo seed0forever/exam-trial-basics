@@ -32,7 +32,8 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: \[One way to do it is by calling the Math.random() method.
+#### Your answer: \[
+One way to do it is by calling the Math.random() method.
 
 It returns a double-precision floating point number (a _double_ type variable) between 0 and 1.
 (0 can be included, 1 is excluded.)

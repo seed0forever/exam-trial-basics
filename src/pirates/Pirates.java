@@ -4,7 +4,7 @@ import java.util.*;
 
 public class PirateCounter {
 
-  class Pirate {
+  static class Pirate {
 
     String name;
     boolean hasWoodenLeg;

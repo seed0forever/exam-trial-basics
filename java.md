@@ -38,8 +38,10 @@ One way to do it is by calling the Math.random() method.
 It returns a double-precision floating point number (a _double_ type variable) between 0 and 1.
 (0 can be included, 1 is excluded.)
 
-If you need e.g a random number between 1 and 10, you multiply the random number you got.
+If you need e.g a random number between 1 and 10, you have to multiply the random number you got.
 Also, if you want a whole number, you have to _cast_ the value you got to _int_.
+Now you have a whole number between 0 and 9.
+So you have to add 1 after you converted it to integer.
 
 Example:
 Random integer between 1 and 10:

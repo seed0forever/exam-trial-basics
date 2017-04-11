@@ -19,4 +19,8 @@ public class Cuboid {
             + width * depth
             + height * depth);
   }
+
+  public float getVolume() {
+    return width * height * depth;
+  }
 }

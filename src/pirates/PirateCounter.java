@@ -32,5 +32,12 @@ public class PirateCounter {
     // And returns a list of names containing the pirates that
     // - have wooden leg and
     // - have more than 15 gold
+
+    List<String> filteredPirateList = filterPirates(pirates);
+    System.out.println(filteredPirateList.toString());
+  }
+
+  private static List<String> filterPirates(List<Pirate> pirates) {
+    return new ArrayList<>();
   }
 }

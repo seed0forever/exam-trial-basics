@@ -1,3 +1,5 @@
+package countas;
+
 public class CountAs {
 
   public static void main(String[] args) {

@@ -13,4 +13,10 @@ public class Cuboid {
     this.height = height;
     this.depth = depth;
   }
+
+  public float getSurface() {
+    return 2f * (width * height
+            + width * depth
+            + height * depth);
+  }
 }

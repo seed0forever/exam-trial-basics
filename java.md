@@ -32,4 +32,17 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: \[One way to do it is by calling the Math.random() method.
+
+It returns a double-precision floating point number (a _double_ type variable) between 0 and 1.
+(0 can be included, 1 is excluded.)
+
+If you need e.g a random number between 1 and 10, you multiply the random number you got.
+Also, if you want a whole number, you have to _cast_ the value you got to _int_.
+
+Example:
+Random integer between 1 and 10:
+```java
+int randomIntBetween1To10 = (int) (Math.random() * 10) + 1;
+```
+\]

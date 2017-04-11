@@ -1,5 +1,11 @@
 package countas;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+
 public class CountAs {
 
   public static void main(String[] args) {
@@ -19,5 +25,23 @@ public class CountAs {
     System.out.println(exampleOutValid);
     exampleOutInvalid = countCharA(FILE_PATH_NOT_EXIST);
     System.out.println(exampleOutInvalid);
+  }
+
+  private static int countCharA(String filename) {
+    char charToCount = 'a';
+    int numOfCharA = 0;
+    try {
+      Path filePath = Paths.get(filename);
+      List<String> lines = Files.readAllLines(filePath);
+      for (String l : lines) {
+        for (int i = 0; i < l.length(); i++) {
+          if (l.toLowerCase().charAt(i) == charToCount) {
+            numOfCharA++;
+          }
+        }
+      }
+    } catch (IOException e) {
+    }
+    return numOfCharA;
   }
 }

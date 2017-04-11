@@ -14,5 +14,10 @@ public class CountAs {
     final String FILE_PATH_NOT_EXIST = "countas/not-a-file";
     int exampleOutValid;
     int exampleOutInvalid;
+
+    exampleOutValid = countCharA(FILE_PATH_EXIST);
+    System.out.println(exampleOutValid);
+    exampleOutInvalid = countCharA(FILE_PATH_NOT_EXIST);
+    System.out.println(exampleOutInvalid);
   }
 }
